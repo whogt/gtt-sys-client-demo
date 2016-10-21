@@ -9,7 +9,7 @@ import time
 from src.gtt_sdk import TestReport, dict_encode_test_results
 
 # todo 在系统中注册了,组织信息中看到这个值,替换到此处
-appid = '56dd4df26c9ae36434dda995'
+appid = '56dd4df26c9----------95'
 appkey = 'jweDdTOrGcXbVvBqWnIEAf------'
 
 
