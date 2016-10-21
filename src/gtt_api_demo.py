@@ -5,8 +5,10 @@ Python演示,上传数据
 # 申请的应用的信息
 import unittest
 import time
+
 from src.gtt_sdk import TestReport, dict_encode_test_results
 
+# todo 在系统中注册了,组织信息中看到这个值,替换到此处
 appid = '56dd4df26c9ae36434dda995'
 appkey = 'jweDdTOrGcXbVvBqWnIEAf------'
 
@@ -38,7 +40,7 @@ class TestDemo(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # TODO 使用Pyunit框架可以构建一个如下的测试结果字典,然后上传到服务器即可
+    # 使用Pyunit框架可以构建一个如下的测试结果字典,然后上传到服务器即可
     # 此处为了简单,直接赋值出来
 
     start_time = time.time()
@@ -57,8 +59,8 @@ if __name__ == '__main__':
     test_res_dict = dict_encode_test_results(
         test_result,
         run_time=total_time,
-        pro_id='57fa12ec4------04a2c69',#按照线上报表系统设计来弄的
-        pro_version='2.16.10.10.1'#当前被测试的系统的版本号
+        pro_id='57fa12ec4------04a2c69',  # todo: 按照线上报表系统设计来弄的,替换掉此处的设置值
+        pro_version='2.16.10.10.1'  # 当前被测试的系统的版本号,依据目前系统的信息
     )
 
     test_report = TestReport()
